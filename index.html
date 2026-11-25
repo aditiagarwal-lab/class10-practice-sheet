@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Class 10 Practice Sheet</title>
+<meta name="description" content="Day-by-day Class 10 chapter practice for six subjects, 25 November to 9 December 2026, with a timer and marks.">
+<meta name="theme-color" content="#F3F5FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1322" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Latin:wdth,wght@75..125,400..800&family=Mukta:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Class 10 Practice Sheet</h1>
+      <p id="count">Oswal practice, 25 November to 9 December 2026</p>
+    </div>
+    <nav class="tabs" aria-label="Views">
+      <a href="#today" id="tab-today">Today</a>
+      <a href="#plan" id="tab-plan">All days</a>
+      <a href="#subjects" id="tab-subjects">Subjects</a>
+    </nav>
+  </header>
+  <section class="omr-box" id="omr" aria-label="Whole plan at a glance"></section>
+  <main id="main"></main>
+  <footer class="foot-note">
+    <p id="sync">Your progress is saved in this browser. Use a backup to move it to another phone or laptop.</p>
+    <div class="backup"><button class="btn" id="bk-save" data-act="backup">Download backup</button><button class="btn" id="bk-load" data-act="restore">Restore backup</button><input type="file" id="bk-file" accept="application/json,.json" hidden></div>
+    <p>Chapters follow the 2026-27 CBSE syllabus. Times are estimates, so change the day of any chapter with the Marks button.</p>
+  </footer>
+</div>
+<div class="bar" id="bar" role="region" aria-label="Practice timer" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p style="padding:16px">Turn on JavaScript to use this practice sheet.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>
