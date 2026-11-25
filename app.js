@@ -12,53 +12,53 @@ const ORDER = ["m", "s", "k", "e", "h", "i"];
 /* [subject, unit, unit marks, [[id, chapter label, title, minutes, day, note]], Hindi course] */
 const PLAN = [
   ["m", "Number Systems", 6, [["m1", "1", "Real Numbers", 35, 1]]],
-  ["m", "Algebra", 20, [["m2", "2", "Polynomials", 35, 2], ["m3", "3", "Pair of Linear Equations in Two Variables", 45, 3], ["m4", "4", "Quadratic Equations", 45, 4], ["m5", "5", "Arithmetic Progressions", 45, 4]]],
-  ["m", "Geometry", 15, [["m6", "6", "Triangles", 45, 5], ["m10", "10", "Circles", 35, 8]]],
-  ["m", "Coordinate Geometry", 6, [["m7", "7", "Coordinate Geometry", 35, 5]]],
-  ["m", "Trigonometry", 12, [["m8", "8", "Introduction to Trigonometry", 45, 6], ["m9", "9", "Some Applications of Trigonometry", 40, 7]]],
-  ["m", "Mensuration", 10, [["m11", "11", "Areas Related to Circles", 35, 9], ["m12", "12", "Surface Areas and Volumes", 45, 10]]],
-  ["m", "Statistics and Probability", 11, [["m13", "13", "Statistics", 45, 11], ["m14", "14", "Probability", 30, 11]]],
-  ["m", "Full paper", 80, [["mP", "P", "Maths full practice paper", 180, 13, "", 80]]],
+  ["m", "Algebra", 20, [["m2", "2", "Polynomials", 35, 1], ["m3", "3", "Pair of Linear Equations in Two Variables", 45, 2], ["m4", "4", "Quadratic Equations", 45, 2], ["m5", "5", "Arithmetic Progressions", 45, 3]]],
+  ["m", "Geometry", 15, [["m6", "6", "Triangles", 45, 4], ["m10", "10", "Circles", 35, 6]]],
+  ["m", "Coordinate Geometry", 6, [["m7", "7", "Coordinate Geometry", 35, 4]]],
+  ["m", "Trigonometry", 12, [["m8", "8", "Introduction to Trigonometry", 45, 5], ["m9", "9", "Some Applications of Trigonometry", 40, 6]]],
+  ["m", "Mensuration", 10, [["m11", "11", "Areas Related to Circles", 35, 7], ["m12", "12", "Surface Areas and Volumes", 45, 7]]],
+  ["m", "Statistics and Probability", 11, [["m13", "13", "Statistics", 45, 8], ["m14", "14", "Probability", 30, 8]]],
+  ["m", "Full paper", 80, [["mP", "P", "Maths full practice paper", 180, 10, "", 80]]],
 
-  ["s", "Chemical Substances", 25, [["s1", "1", "Chemical Reactions and Equations", 40, 1], ["s2", "2", "Acids, Bases and Salts", 45, 2], ["s3", "3", "Metals and Non-metals", 45, 3], ["s4", "4", "Carbon and its Compounds", 45, 4]]],
-  ["s", "World of Living", 25, [["s5", "5", "Life Processes", 50, 4], ["s6", "6", "Control and Coordination", 40, 5], ["s7", "7", "How do Organisms Reproduce?", 40, 5], ["s8", "8", "Heredity", 40, 6, "Skip Evolution"]]],
-  ["s", "Natural Phenomena", 12, [["s9", "9", "Light: Reflection and Refraction", 50, 7], ["s10", "10", "The Human Eye and the Colourful World", 35, 8]]],
-  ["s", "Effects of Current", 13, [["s11", "11", "Electricity", 50, 9], ["s12", "12", "Magnetic Effects of Electric Current", 40, 10, "Skip motor, induction and generator"]]],
-  ["s", "Natural Resources", 5, [["s13", "13", "Our Environment", 30, 11]]],
-  ["s", "Full paper", 80, [["sP", "P", "Science full practice paper", 180, 12, "", 80]]],
+  ["s", "Chemical Substances", 25, [["s1", "1", "Chemical Reactions and Equations", 40, 1], ["s2", "2", "Acids, Bases and Salts", 45, 1], ["s3", "3", "Metals and Non-metals", 45, 2], ["s4", "4", "Carbon and its Compounds", 45, 2]]],
+  ["s", "World of Living", 25, [["s5", "5", "Life Processes", 50, 3], ["s6", "6", "Control and Coordination", 40, 3], ["s7", "7", "How do Organisms Reproduce?", 40, 4], ["s8", "8", "Heredity", 40, 5, "Skip Evolution"]]],
+  ["s", "Natural Phenomena", 12, [["s9", "9", "Light: Reflection and Refraction", 50, 5], ["s10", "10", "The Human Eye and the Colourful World", 35, 6]]],
+  ["s", "Effects of Current", 13, [["s11", "11", "Electricity", 50, 7], ["s12", "12", "Magnetic Effects of Electric Current", 40, 8, "Skip motor, induction and generator"]]],
+  ["s", "Natural Resources", 5, [["s13", "13", "Our Environment", 30, 8]]],
+  ["s", "Full paper", 80, [["sP", "P", "Science full practice paper", 180, 9, "", 80]]],
 
-  ["k", "History", 20, [["h1", "1", "The Rise of Nationalism in Europe", 40, 1], ["h2", "2", "Nationalism in India", 45, 4], ["h3", "3", "The Making of a Global World", 20, 7, "Topics 1 to 1.3 only"], ["h5", "5", "Print Culture and the Modern World", 35, 10]]],
-  ["k", "Geography", 20, [["g1", "1", "Resources and Development", 35, 2], ["g2", "2", "Forest and Wildlife Resources", 25, 3], ["g3", "3", "Water Resources", 25, 4], ["g4", "4", "Agriculture", 35, 5], ["g5", "5", "Minerals and Energy Resources", 35, 8], ["g6", "6", "Manufacturing Industries", 30, 9], ["g7", "7", "Lifelines of National Economy", 20, 11, "Map pointing only"]]],
-  ["k", "Political Science", 20, [["p1", "1", "Power-sharing", 25, 1], ["p2", "2", "Federalism", 30, 4], ["p3", "3", "Gender, Religion and Caste", 30, 5], ["p4", "4", "Political Parties", 35, 7], ["p5", "5", "Outcomes of Democracy", 25, 11]]],
-  ["k", "Economics", 20, [["e1", "1", "Development", 30, 3], ["e2", "2", "Sectors of the Indian Economy", 35, 5], ["e3", "3", "Money and Credit", 30, 6], ["e4", "4", "Globalisation and the Indian Economy", 20, 9, "First two topics only"]]],
-  ["k", "Map work", null, [["map", "", "All map items, History and Geography", 25, 11, "2 marks in History, 3 in Geography"]]],
-  ["k", "Full paper", 80, [["kP", "P", "SST full practice paper", 180, 14, "", 80]]],
+  ["k", "History", 20, [["h1", "1", "The Rise of Nationalism in Europe", 40, 1], ["h2", "2", "Nationalism in India", 45, 3], ["h3", "3", "The Making of a Global World", 20, 6, "Topics 1 to 1.3 only"], ["h5", "5", "Print Culture and the Modern World", 35, 8]]],
+  ["k", "Geography", 20, [["g1", "1", "Resources and Development", 35, 1], ["g2", "2", "Forest and Wildlife Resources", 25, 2], ["g3", "3", "Water Resources", 25, 3], ["g4", "4", "Agriculture", 35, 5], ["g5", "5", "Minerals and Energy Resources", 35, 6], ["g6", "6", "Manufacturing Industries", 30, 7], ["g7", "7", "Lifelines of National Economy", 20, 8, "Map pointing only"]]],
+  ["k", "Political Science", 20, [["p1", "1", "Power-sharing", 25, 1], ["p2", "2", "Federalism", 30, 2], ["p3", "3", "Gender, Religion and Caste", 30, 4], ["p4", "4", "Political Parties", 35, 6], ["p5", "5", "Outcomes of Democracy", 25, 8]]],
+  ["k", "Economics", 20, [["e1", "1", "Development", 30, 2], ["e2", "2", "Sectors of the Indian Economy", 35, 4], ["e3", "3", "Money and Credit", 30, 5], ["e4", "4", "Globalisation and the Indian Economy", 20, 7, "First two topics only"]]],
+  ["k", "Map work", null, [["map", "", "All map items, History and Geography", 25, 10, "2 marks in History, 3 in Geography"]]],
+  ["k", "Full paper", 80, [["kP", "P", "SST full practice paper", 180, 11, "", 80]]],
 
-  ["e", "First Flight, prose", null, [["f1", "1", "A Letter to God", 20, 1], ["f2", "2", "Nelson Mandela: Long Walk to Freedom", 20, 1], ["f3", "3", "Two Stories about Flying", 20, 3], ["f4", "4", "From the Diary of Anne Frank", 20, 3], ["f5", "5", "Glimpses of India", 20, 4], ["f6", "6", "Mijbil the Otter", 20, 7], ["f7", "7", "Madam Rides the Bus", 20, 7], ["f8", "8", "The Sermon at Benares", 15, 9], ["f9", "9", "The Proposal", 25, 9]]],
-  ["e", "First Flight, poems", null, [["po1", "", "Dust of Snow, Fire and Ice", 20, 1], ["po2", "", "A Tiger in the Zoo, How to Tell Wild Animals", 20, 3], ["po3", "", "The Ball Poem, Amanda!", 20, 5], ["po4", "", "The Trees, Fog", 20, 7], ["po5", "", "The Tale of Custard the Dragon, For Anne Gregory", 20, 9]]],
-  ["e", "Footprints Without Feet", null, [["w1", "1", "A Triumph of Surgery", 15, 1], ["w2", "2", "The Thief's Story", 15, 3], ["w3", "3", "The Midnight Visitor", 15, 3], ["w4", "4", "A Question of Trust", 15, 5], ["w5", "5", "Footprints Without Feet", 15, 5], ["w6", "6", "The Making of a Scientist", 15, 7], ["w7", "7", "The Necklace", 15, 9], ["w8", "8", "Bholi", 15, 9], ["w9", "9", "The Book That Saved the Earth", 15, 11]]],
-  ["e", "Writing and grammar", 20, [["eg1", "", "Grammar: tenses, modals, determiners", 25, 1], ["eg2", "", "Grammar: subject-verb concord, reported speech", 25, 7], ["ew1", "", "Formal letter", 25, 4], ["ew2", "", "Analytical paragraph", 25, 11]]],
-  ["e", "Reading", 20, [["er", "", "Discursive passage and case-based passage", 30, 11]]],
-  ["e", "Full paper", 80, [["eP", "P", "English full practice paper", 180, 15, "", 80]]],
+  ["e", "First Flight, prose", null, [["f1", "1", "A Letter to God", 20, 1], ["f2", "2", "Nelson Mandela: Long Walk to Freedom", 20, 1], ["f3", "3", "Two Stories about Flying", 20, 2], ["f4", "4", "From the Diary of Anne Frank", 20, 3], ["f5", "5", "Glimpses of India", 20, 3], ["f6", "6", "Mijbil the Otter", 20, 5], ["f7", "7", "Madam Rides the Bus", 20, 5], ["f8", "8", "The Sermon at Benares", 15, 7], ["f9", "9", "The Proposal", 25, 10]]],
+  ["e", "First Flight, poems", null, [["po1", "", "Dust of Snow, Fire and Ice", 20, 1], ["po2", "", "A Tiger in the Zoo, How to Tell Wild Animals", 20, 3], ["po3", "", "The Ball Poem, Amanda!", 20, 5], ["po4", "", "The Trees, Fog", 20, 7], ["po5", "", "The Tale of Custard the Dragon, For Anne Gregory", 20, 10]]],
+  ["e", "Footprints Without Feet", null, [["w1", "1", "A Triumph of Surgery", 15, 1], ["w2", "2", "The Thief's Story", 15, 2], ["w3", "3", "The Midnight Visitor", 15, 3], ["w4", "4", "A Question of Trust", 15, 5], ["w5", "5", "Footprints Without Feet", 15, 5], ["w6", "6", "The Making of a Scientist", 15, 7], ["w7", "7", "The Necklace", 15, 7], ["w8", "8", "Bholi", 15, 8], ["w9", "9", "The Book That Saved the Earth", 15, 10]]],
+  ["e", "Writing and grammar", 20, [["eg1", "", "Grammar: tenses, modals, determiners", 25, 2], ["eg2", "", "Grammar: subject-verb concord, reported speech", 25, 7], ["ew1", "", "Formal letter", 25, 3], ["ew2", "", "Analytical paragraph", 25, 10]]],
+  ["e", "Reading", 20, [["er", "", "Discursive passage and case-based passage", 30, 10]]],
+  ["e", "Full paper", 80, [["eP", "P", "English full practice paper", 180, 12, "", 80]]],
 
-  ["h", "क्षितिज, काव्य", null, [["a1", "1", "पद (सूरदास)", 20, 2], ["a2", "2", "राम-लक्ष्मण-परशुराम संवाद", 25, 2], ["a3", "3", "आत्मकथ्य", 20, 4], ["a4", "4", "उत्साह, अट नहीं रही है", 20, 6], ["a5", "5", "यह दंतुरित मुसकान, फसल", 20, 8], ["a6", "6", "संगतकार", 20, 10]], "A"],
-  ["h", "क्षितिज, गद्य", null, [["a7", "7", "नेताजी का चश्मा", 20, 2], ["a8", "8", "बालगोबिन भगत", 20, 4], ["a9", "9", "लखनवी अंदाज़", 20, 5], ["a10", "10", "एक कहानी यह भी", 20, 6], ["a11", "11", "नौबतखाने में इबादत", 20, 8], ["a12", "12", "संस्कृति", 20, 10]], "A"],
-  ["h", "कृतिका", null, [["ak1", "1", "माता का अँचल", 20, 5], ["ak2", "2", "साना-साना हाथ जोड़ि", 20, 8], ["ak3", "3", "मैं क्यों लिखता हूँ?", 15, 10]], "A"],
-  ["h", "व्याकरण", 16, [["ag1", "", "रचना के आधार पर वाक्य भेद", 20, 2], ["ag2", "", "वाच्य", 20, 6], ["ag3", "", "पद परिचय", 20, 8], ["ag4", "", "अलंकार", 20, 10]], "A"],
-  ["h", "रचनात्मक लेखन", 20, [["aw1", "", "अनुच्छेद और पत्र", 25, 6], ["aw2", "", "स्ववृत्त, ई-मेल, विज्ञापन, संदेश", 25, 11]], "A"],
-  ["h", "अपठित बोध", 14, [["ar", "", "अपठित गद्यांश और काव्यांश", 20, 11]], "A"],
+  ["h", "क्षितिज, काव्य", null, [["a1", "1", "पद (सूरदास)", 20, 1], ["a2", "2", "राम-लक्ष्मण-परशुराम संवाद", 25, 2], ["a3", "3", "आत्मकथ्य", 20, 4], ["a4", "4", "उत्साह, अट नहीं रही है", 20, 4], ["a5", "5", "यह दंतुरित मुसकान, फसल", 20, 6], ["a6", "6", "संगतकार", 20, 8]], "A"],
+  ["h", "क्षितिज, गद्य", null, [["a7", "7", "नेताजी का चश्मा", 20, 1], ["a8", "8", "बालगोबिन भगत", 20, 2], ["a9", "9", "लखनवी अंदाज़", 20, 4], ["a10", "10", "एक कहानी यह भी", 20, 6], ["a11", "11", "नौबतखाने में इबादत", 20, 7], ["a12", "12", "संस्कृति", 20, 8]], "A"],
+  ["h", "कृतिका", null, [["ak1", "1", "माता का अँचल", 20, 2], ["ak2", "2", "साना-साना हाथ जोड़ि", 20, 6], ["ak3", "3", "मैं क्यों लिखता हूँ?", 15, 8]], "A"],
+  ["h", "व्याकरण", 16, [["ag1", "", "रचना के आधार पर वाक्य भेद", 20, 1], ["ag2", "", "वाच्य", 20, 4], ["ag3", "", "पद परिचय", 20, 6], ["ag4", "", "अलंकार", 20, 8]], "A"],
+  ["h", "रचनात्मक लेखन", 20, [["aw1", "", "अनुच्छेद और पत्र", 25, 4], ["aw2", "", "स्ववृत्त, ई-मेल, विज्ञापन, संदेश", 25, 8]], "A"],
+  ["h", "अपठित बोध", 14, [["ar", "", "अपठित गद्यांश और काव्यांश", 20, 8]], "A"],
 
-  ["h", "स्पर्श, काव्य", null, [["b1", "", "साखी (कबीर)", 20, 2], ["b2", "", "पद (मीरा)", 15, 2], ["b3", "", "मनुष्यता", 20, 4], ["b4", "", "पर्वत प्रदेश में पावस", 15, 5], ["b5", "", "तोप", 15, 6], ["b6", "", "कर चले हम फ़िदा", 15, 8], ["b7", "", "आत्मत्राण", 15, 10]], "B"],
-  ["h", "स्पर्श, गद्य", null, [["b8", "", "बड़े भाई साहब", 20, 2], ["b9", "", "डायरी का एक पन्ना", 20, 4], ["b10", "", "ततांरा-वामीरो कथा", 20, 5], ["b11", "", "तीसरी कसम के शिल्पकार शैलेंद्र", 20, 6], ["b12", "", "अब कहाँ दूसरे के दुख से दुखी होने वाले", 20, 8], ["b13", "", "पतझर में टूटी पत्तियाँ: झेन की देन", 15, 10], ["b14", "", "कारतूस", 15, 10]], "B"],
-  ["h", "संचयन", null, [["bs1", "", "हरिहर काका", 20, 5], ["bs2", "", "सपनों के-से दिन", 20, 8], ["bs3", "", "टोपी शुक्ला", 20, 10]], "B"],
-  ["h", "व्याकरण", 16, [["bg1", "", "पदबंध", 20, 2], ["bg2", "", "रचना के आधार पर वाक्य रूपांतरण", 20, 6], ["bg3", "", "समास", 20, 8], ["bg4", "", "मुहावरे", 20, 10]], "B"],
-  ["h", "रचनात्मक लेखन", 22, [["bw1", "", "अनुच्छेद और औपचारिक पत्र", 25, 6], ["bw2", "", "सूचना, विज्ञापन, ई-मेल या लघु कथा", 25, 11]], "B"],
-  ["h", "अपठित बोध", 14, [["br", "", "अपठित गद्यांश", 20, 11]], "B"],
-  ["h", "Full paper", 80, [["hP", "P", "Hindi full practice paper", 180, 12, "", 80]]],
+  ["h", "स्पर्श, काव्य", null, [["b1", "", "साखी (कबीर)", 20, 1], ["b2", "", "पद (मीरा)", 15, 2], ["b3", "", "मनुष्यता", 20, 4], ["b4", "", "पर्वत प्रदेश में पावस", 15, 4], ["b5", "", "तोप", 15, 6], ["b6", "", "कर चले हम फ़िदा", 15, 6], ["b7", "", "आत्मत्राण", 15, 8]], "B"],
+  ["h", "स्पर्श, गद्य", null, [["b8", "", "बड़े भाई साहब", 20, 1], ["b9", "", "डायरी का एक पन्ना", 20, 2], ["b10", "", "ततांरा-वामीरो कथा", 20, 4], ["b11", "", "तीसरी कसम के शिल्पकार शैलेंद्र", 20, 6], ["b12", "", "अब कहाँ दूसरे के दुख से दुखी होने वाले", 20, 7], ["b13", "", "पतझर में टूटी पत्तियाँ: झेन की देन", 15, 8], ["b14", "", "कारतूस", 15, 8]], "B"],
+  ["h", "संचयन", null, [["bs1", "", "हरिहर काका", 20, 2], ["bs2", "", "सपनों के-से दिन", 20, 6], ["bs3", "", "टोपी शुक्ला", 20, 8]], "B"],
+  ["h", "व्याकरण", 16, [["bg1", "", "पदबंध", 20, 1], ["bg2", "", "रचना के आधार पर वाक्य रूपांतरण", 20, 4], ["bg3", "", "समास", 20, 6], ["bg4", "", "मुहावरे", 20, 8]], "B"],
+  ["h", "रचनात्मक लेखन", 22, [["bw1", "", "अनुच्छेद और औपचारिक पत्र", 25, 4], ["bw2", "", "सूचना, विज्ञापन, ई-मेल या लघु कथा", 25, 8]], "B"],
+  ["h", "अपठित बोध", 14, [["br", "", "अपठित गद्यांश", 20, 8]], "B"],
+  ["h", "Full paper", 80, [["hP", "P", "Hindi full practice paper", 180, 9, "", 80]]],
 
-  ["i", "Part A: Employability Skills", 10, [["i1", "A1", "Communication Skills-II", 15, 1], ["i2", "A2", "Self-Management Skills-II", 15, 3], ["i3", "A3", "ICT Skills-II", 15, 7], ["i4", "A4", "Entrepreneurial Skills-II", 15, 9], ["i5", "A5", "Green Skills-II", 10, 11]]],
-  ["i", "Part B: Subject Skills", 40, [["i6", "B1", "Digital Documentation, Advanced (Writer)", 35, 2], ["i7", "B2", "Electronic Spreadsheet, Advanced (Calc)", 40, 6], ["i8", "B3", "Database Management System (Base)", 45, 8], ["i9", "B4", "Healthy, Safe and Secure Working Environment", 35, 10]]],
-  ["i", "Full paper", 50, [["iP", "P", "IT full practice paper", 120, 14, "", 50]]]
+  ["i", "Part A: Employability Skills", 10, [["i1", "A1", "Communication Skills-II", 15, 1], ["i2", "A2", "Self-Management Skills-II", 15, 3], ["i3", "A3", "ICT Skills-II", 15, 5], ["i4", "A4", "Entrepreneurial Skills-II", 15, 7], ["i5", "A5", "Green Skills-II", 10, 7]]],
+  ["i", "Part B: Subject Skills", 40, [["i6", "B1", "Digital Documentation, Advanced (Writer)", 35, 2], ["i7", "B2", "Electronic Spreadsheet, Advanced (Calc)", 40, 4], ["i8", "B3", "Database Management System (Base)", 45, 6], ["i9", "B4", "Healthy, Safe and Secure Working Environment", 35, 8]]],
+  ["i", "Full paper", 50, [["iP", "P", "IT full practice paper", 120, 11, "", 50]]]
 ];
 const OUT = {
   s: ["Periodic Classification of Elements: not asked in the year-end exam", "Evolution: not asked in the year-end exam", "Electric motor, electromagnetic induction, generator: not asked in the year-end exam"],
@@ -71,11 +71,12 @@ for (const [s, u, um, list, course] of PLAN) for (const [id, ch, t, mins, day, n
   const it = { id, s, u, um, ch, t, mins, day, note: note || "", paper: paper || 0, course: course || "" };
   ITEMS.push(it); BY[id] = it;
 }
-const N = 15, Y = 2026, WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], WDL = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const N = 12, Y = 2026, WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], WDL = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const MON = { 10: ["Nov", "November"], 11: ["Dec", "December"] };
-const dateOf = n => new Date(Y, 10, 24 + n);
+const dateOf = n => new Date(Y, 10, 27 + n);
 const short = n => { const d = dateOf(n); return `${WD[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()][0]}`; };
 const long = n => { const d = dateOf(n); return `${WDL[d.getDay()]} ${d.getDate()} ${MON[d.getMonth()][1]}`; };
+const dm = n => `${dateOf(n).getDate()} ${MON[dateOf(n).getMonth()][1]}`, SPAN = `${dm(1)} to ${dm(N)} ${Y}`;
 const rawToday = () => { const d = new Date(); return Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - dateOf(0)) / 864e5); };
 const todayN = () => Math.min(N, Math.max(1, rawToday()));
 const hm = m => { const h = Math.floor(m / 60), r = Math.round(m % 60); return h ? (r ? `${h} h ${r} min` : `${h} h`) : `${r} min`; };
@@ -85,11 +86,13 @@ const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
 /* ---------- State ---------- */
 const KEY = "c10sheet.v1", RUNKEY = "c10sheet.run";
 const num = v => (v === null || v === undefined || v === "" || !isFinite(Number(v))) ? null : Number(v);
+/* Plan 1 started on 25 November, so a chapter moved to another day in plan 1 is stored 3 days higher. */
+const PLAN_V = 2;
 function clean(doc) {
-  const out = { items: {}, set: {} };
+  const out = { plan: PLAN_V, items: {}, set: {} }, off = doc && doc.plan === PLAN_V ? 0 : 3;
   if (doc && doc.items && typeof doc.items === "object") for (const id of Object.keys(doc.items)) {
     if (!BY[id]) continue;
-    const r = doc.items[id] || {}, v = num(r.v);
+    const r = doc.items[id] || {}, v = num(r.v) - off;
     out.items[id] = { d: r.d ? 1 : 0, g: num(r.g), x: num(r.x), m: num(r.m) || 0, v: v >= 1 && v <= N ? Math.round(v) : null, t: num(r.t) || 0 };
   }
   const h = doc && doc.set && doc.set.hindi;
@@ -195,7 +198,7 @@ function dayHTML(n) {
     <div class="step"><a class="btn" href="#day-${Math.max(1, n - 1)}"${n === 1 ? ' aria-disabled="true"' : ""}>Previous day</a><a class="btn" href="#day-${Math.min(N, n + 1)}"${n === N ? ' aria-disabled="true"' : ""}>Next day</a></div></div><div class="groups" style="margin-top:20px">`;
   if (late.length) h += `<section class="group late"><h3>Pending from earlier days<span>${hm(late.reduce((a, i) => a + i.mins, 0))}</span></h3><ul>${late.map(i => rowHTML(i, "l", `${SUBJ[i.s].name}, from ${short(dayOf(i))}`)).join("")}</ul></section>`;
   for (const s of ORDER) { const l = day.filter(i => i.s === s); if (l.length) h += groupHTML(s, l, "d"); }
-  if (n >= 12) {
+  if (n >= N - 3) {
     const weak = all.filter(i => pct(i.id) !== null && pct(i.id) < 70 && !i.paper).sort((a, b) => pct(a.id) - pct(b.id)).slice(0, 6);
     h += `<section class="group"><h3>Redo your weakest chapters</h3>${weak.length ? `<ul>${weak.map(i => rowHTML(i, "r", SUBJ[i.s].name)).join("")}</ul>` : `<p class="empty">Chapters where you score under 70% will be listed here.</p>`}</section>`;
   }
@@ -211,7 +214,7 @@ function planHTML() {
       return `<td class="${l.length ? "" : "none"}" data-l="${code(s)} ${SUBJ[s].name}"><ul>${l.map(i => `<li class="${st(i.id).d ? "is-done" : ""}"><button class="tick${i.paper ? " paper" : ""}" id="b-a-${i.id}" data-act="toggle" data-id="${i.id}" aria-pressed="${!!st(i.id).d}" aria-label="Done: ${esc(i.t)}"></button><span${i.s === "h" && !i.paper ? ' lang="hi"' : ""}>${i.ch && !i.paper ? esc(i.ch) + ". " : ""}${esc(i.paper ? "Full paper" : i.t)}</span></li>`).join("")}</ul></td>`;
     }).join("")}</tr>`;
   }
-  return `<div class="dayhead"><div><h2>All days</h2><p class="sub">Chapters run from 25 November to 5 December. Full papers run from 6 to 9 December.</p></div></div>
+  return `<div class="dayhead"><div><h2>All days</h2><p class="sub">Chapters run from 28 November to 7 December. Full papers run from 6 to 9 December.</p></div></div>
     <table class="ds" style="margin-top:18px"><thead><tr><th scope="col">Date</th>${ORDER.map(s => `<th scope="col"><b>${code(s)}</b> ${SUBJ[s].name}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table>`;
 }
 function subjectHTML(s) {
@@ -245,8 +248,9 @@ function render() {
   for (const [id, on] of [["tab-today", r.v === "day" && r.n === todayN()], ["tab-plan", r.v === "plan"], ["tab-subjects", r.v === "subject"]]) {
     const a = document.getElementById(id); on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
   }
+  document.getElementById("tab-today").textContent = t < 1 ? "First day" : "Today";
   const left = N - t + 1;
-  document.getElementById("count").textContent = t < 1 ? "Oswal practice, 25 November to 9 December 2026" : left > 1 ? `Oswal practice, ends Wed 9 December. ${left} days left, counting today` : left === 1 ? "Oswal practice. Last day today" : "Oswal practice, 25 November to 9 December 2026. Plan finished";
+  document.getElementById("count").textContent = t < 1 ? `Oswal practice, ${SPAN}. Starts in ${plural(1 - t, "day")}` : left > 1 ? `Oswal practice, ends Wed 9 December. ${left} days left, counting today` : left === 1 ? "Oswal practice. Last day today" : `Oswal practice, ${SPAN}. Plan finished`;
   if (keep) { const el = document.getElementById(keep); if (el && el !== document.activeElement) el.focus({ preventScroll: true }); }
 }
 let later = false;

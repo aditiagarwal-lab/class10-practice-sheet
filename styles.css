@@ -1,4 +1,4 @@
-/* Layout: an OMR answer sheet for the whole fortnight on top (6 subjects x 15 days, one bubble per session),
+/* Layout: an OMR answer sheet for the whole fortnight on top (6 subjects x 12 days, one bubble per session),
    then one working view below it: a day, the full date sheet, or a subject. Rose is the printed ink, blue is the pen. */
 :root {
   color-scheme: light;
@@ -61,7 +61,7 @@ a { color: var(--pen); }
 
 /* OMR sheet */
 .omr-box { background: var(--sheet); border: 1.5px solid var(--rose-line); padding: 10px 12px 12px; }
-.omr { --row: 34px; --head: 46px; --foot: 18px; --b: 10px; display: grid; grid-template-columns: 112px repeat(15, minmax(0, 1fr)); }
+.omr { --row: 34px; --head: 46px; --foot: 18px; --b: 10px; display: grid; grid-template-columns: 112px repeat(12, minmax(0, 1fr)); }
 .omr-labels, .omr-col { display: grid; grid-template-rows: var(--head) repeat(6, var(--row)) var(--foot); min-width: 0; }
 .omr-labels span { display: flex; align-items: center; gap: 8px; font: 600 14px/1 var(--f-display); border-top: 1px solid var(--rose-line); color: var(--ink); min-width: 0; }
 .omr-labels span:first-child, .omr-labels span:last-child { border-top: 0; }
@@ -197,7 +197,7 @@ h2 { font: 700 clamp(1.45rem, 3.4vw, 1.9rem)/1.1 var(--f-display); font-stretch:
 @media (max-width: 640px) {
   .wrap { padding-block: 16px 150px; gap: 20px; }
   .omr-box { padding: 8px 6px 10px; }
-  .omr { --row: 34px; --head: 42px; --b: 6px; grid-template-columns: 34px repeat(15, minmax(0, 1fr)); }
+  .omr { --row: 34px; --head: 42px; --b: 6px; grid-template-columns: 34px repeat(12, minmax(0, 1fr)); }
   .omr-labels span { font-size: 12px; }
   .omr-labels em { display: none; }
   .omr-date { font-size: 11px; }
